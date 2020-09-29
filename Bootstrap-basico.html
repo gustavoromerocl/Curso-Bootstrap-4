@@ -8,19 +8,30 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            One of three columns
-          </div>
-          <div class="col-md-6">
-            One of three columns
-          </div>
-          <div class="col-xl">
-            One of three columns
-          </div>
+    <header class="header-area fixed-top">
+        <div class="main-menu">
+            <nav class="navbar">
+                <div class="container">
+                    <ul class="nav ml-auto mr-auto mr-md-0"> <!--ML = Margin Left MR= Margin right-->
+                        <li class="nav-item active"><a class="nav-link" href="#main-info">Principal</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#skills">Habilidades</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#education">Educación</a></li>
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Proyectos
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="#portfolio" class="nav-link">Portafolio</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">GitHub</a></li>
+                              </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </div>
+    </header>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
