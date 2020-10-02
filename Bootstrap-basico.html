@@ -68,7 +68,13 @@
     <section class="sect skills" id="skills">
         <div class="container">
             <div class="head-content d-flex align-items-baseline">
-                <div class="row" id="skills-content"> 
+                <button class="btn" type="button" data-toggle="collapse" data-target="#skills-content"
+                aria-expanded="false" aria-controls="skills-content">
+                    <i class="far fa-plus-square"></i>
+                </button>
+                <h3 class="sect-title">Habilidades</h3>
+            </div>
+                <div class="row collapse" id="skills-content"> 
                     <div class="skills-col col-12 col-md-6">
                         <h4 class="sect-subtitle">Desarrollo de Software</h4>
                         <div class="skill-item">
@@ -112,11 +118,15 @@
     <section class="sect portfolio bg-gradient" id="portfolio">
         <div class="container">
             <div class="head-content d-flex align-items-baseline">
+                <button class="btn" type="button" data-toggle="collapse" data-target="#portfolio-content"
+                aria-expanded="false" aria-controls="portfolio-content">
+                    <i class="far fa-plus-square"></i>
+                </button>
                 <h3 class="sect-title">Proyectos Destacados</h3>
             </div>
         </div>
 
-        <div class="container-fluid" id="portfolio-content">
+        <div class="container-fluid collapse" id="portfolio-content">
             <div class="card-container d-flex flex-wrap justify-content-around align-items-center">
                 <div class="card-body">
                     <i class="fas fa-credit-card"></i>
