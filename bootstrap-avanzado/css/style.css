@@ -71,5 +71,10 @@
     margin-top: 40px;
 }
 
+.btn-orange{
+    background-color: var(--orange-lighter);
+    color: #fff;
+}
+
 
 
