@@ -77,4 +77,37 @@
 }
 
 
+/* Adoptions*/
+.adoptions-sect{
+    background-color: #fff;
+}
 
+.section-title{
+    font-size: 28px;
+    font-weight: 700;
+    color: #6e757d;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.monthly-adoptions-area{
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.img-container figure > img{
+    max-height: 184px;
+}
+
+.img-container figure > figcaption{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--orange-lighter);
+    text-align: center;
+}
