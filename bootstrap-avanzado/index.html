@@ -24,7 +24,28 @@
             </button>
           </div>
           <div class="modal-body">
-            Hola Mundo!
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name-in">Nombre*</label>
+                <input type="text" class="form-control" id="name-in" placeholder="Ingresa tu nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="email-in">Email</label>
+                <input type="email" class="form-control" id="email-in" placeholder="email@example.com" aria-describedby="email-help">
+                <small id="email-help" class="form-text text-muted">
+                  No compartiremos tus datos
+                </small>
+              </div>
+              <div class="form-group">
+                <label for="comment-in">Comentarios*</label>
+                <textarea class="form-control" id="comment-in" rows="4" required></textarea>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="receive-info">
+                <label class="form-check-label" for="receive-info">Quiero recibir correos informativos</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
         </div>
       </div>
