@@ -88,6 +88,12 @@
           </nav>
           <!--Carousel -->
           <section class="carousel-sect">
+            <div class="alert alert-success alert-dismissible fade text-center" role="alert" id="contact-alert" style="display: none;">
+              <strong>Mensaje enviado</strong> Gracias por contactarnos.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
             <div id="home-carousel" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
@@ -216,6 +222,14 @@
               if (form.checkValidity() === false) {
                 event.preventDefault();
                 event.stopPropagation();
+              }else{
+                event.preventDefault();
+                event.stopPropagation();
+                $('#contact-modal').modal('hide');
+                $('#contact-alert').show();
+                setTimeout(()=>{
+                  $('#contact-alert').hide();
+                }, 10000)
               }
               form.classList.add('was-validated');
             }, false);
